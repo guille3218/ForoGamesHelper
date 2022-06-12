@@ -1,0 +1,86 @@
+// Take variables from './node_modules/bootstrap/scss/_variables.scss' and override them
+
+@import 'colors';
+
+$body-bg: $gray-100;
+
+$enable-grid-classes: false;
+$enable-validation-icons: false;
+
+$input-btn-focus-color: $info-light;
+$input-focus-border-color: $info-light;
+
+$font-size-base: .875rem;  // 14px
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.15;
+$h6-font-size: $font-size-base;
+
+$font-weight-light: 300 !default;
+
+$headings-color: $primary;
+
+$border-radius: 4px;
+
+$btn-border-width: 1.5px;
+
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1rem;
+$input-box-shadow: inset 0 1px 2px rgba($black, .1);
+$input-btn-focus-width: .1rem;
+$btn-border-radius: 1.5rem;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-padding-x: 2rem;
+
+$spacer-y: .75rem;
+$spacer-x: .75rem;
+$grid-gutter-width: $spacer-x;
+$card-spacer-y: $spacer-y;
+$card-spacer-x: $spacer-x;
+
+$card-cap-bg: $white;
+
+$card-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .15);
+
+$table-cell-padding: .5rem;
+$table-head-color: $primary;
+
+$navbar-height: 3rem;
+$main-padding: 1rem;
+
+$link-decoration: underline;
+
+$alert-border-width: 0;
+$alert-border-radius: 0;
+
+// $breadcrumb-divider: none;
+$breadcrumb-border-radius: 0;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: $accent-light;
+
+
+$custom-select-indicator-width: 2em;
+$custom-select-bg-size: .75em 1em;
+$custom-select-indicator-color: $primary;
+
+@function custom-select-indicator($color: $primary) {
+  // Double quotes triggers Sonar 😒
+  // It does not work with single quotes in url and double quotes inside the svg on IE
+  @return str-replace(url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 448 512\' %3e%3cpath fill=\'#{$color}\' d=\'M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z\'/%3e%3c/svg%3e'), '#', '%23');
+}
+
+$custom-select-indicator: custom-select-indicator();
+@function custom-select-background($color: $primary) {
+  @return custom-select-indicator($color) no-repeat right .75em center / $custom-select-bg-size;
+}
+$custom-select-background: custom-select-background();
+
+// Material
+
+$tabs-height: 2.25rem;
+
+@import '~bootstrap/scss/functions', '~bootstrap/scss/_variables.scss';

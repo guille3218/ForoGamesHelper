@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light"  *transloco="let t; read: 'MENU_NAV'">
+    <a class="navbar-brand" href=''>{{ t('NAME') }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li id="clients" class="nav-item ">
+                <a class="nav-link" href=''>
+                    <fa-icon [icon]="['fas','address-card']" class="client-icon"></fa-icon>{{ t('LOGIN') }}
+                </a>
+            </li>
+            <li id="form" class="nav-item">
+                <a class="nav-link" href="/register">
+                    <fa-icon [icon]="['fas','book']" class="client-icon"></fa-icon>{{ t('REGISTER') }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

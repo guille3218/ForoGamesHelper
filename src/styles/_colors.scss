@@ -1,0 +1,150 @@
+$white: #fff;
+
+$gray-100: #f5f9fb;
+$gray-150: #e4e8eb;
+$gray-200: #e9e9ea;
+$gray-250: #dbe0e3;
+$gray-300: #cfcfd0;
+$gray-400: #bdbdbf;
+$gray-500: #999999;
+$gray-600: #6e7073;
+$gray-650: #6f7779;
+$gray-700: #5c5c5c;
+$gray-800: #535353;
+$gray-900: #4a4a4a;
+$gray-table: #f9f9f9;
+$black: #212529;
+
+$primary-palette: (
+  50 : #ceed85,
+  100 : #c1e378,
+  200 : #b4d96c,
+  300 : #a6d96c,
+  400 : #99c653,
+  500 : #8cbc46,
+  600 : #7fb23a,
+  700 : #71a92d,
+  800 : #649f21,
+  900 : #579514,
+  A100 : $white,
+  A200 : #e9ffc7,
+  A400 : #ddf6b8,
+  A700 : #d0eda9,
+  contrast: (
+    50 : $black,
+    100 : $black,
+    200 : $black,
+    300 : $white,
+    400 : $white,
+    500 : $white,
+    600 : $white,
+    700 : $white,
+    800 : $white,
+    900 : $white,
+    A100 : $black,
+    A200 : $black,
+    A400 : $black,
+    A700 : $black,
+  )
+);
+
+$accent-palette: (
+  50 : #dbe0e3,
+  100 : #badde9,
+  // 200 : green,
+  200 : #137e84,
+  300 : #7aa9bc,
+  400 : #6095aa,
+  500 : #458399,
+  600 : #397387,
+  700 : #2a5f71,
+  800 : #1d6989,
+  900 : #093644,
+  contrast: (
+    50 : $black,
+    100 : $black,
+    200 : $white,
+    300 : $black,
+    400 : $black,
+    500 : $white,
+    600 : $white,
+    700 : $white,
+    800 : $white,
+    900 : $white,
+  )
+);
+
+$danger-palette: (
+  50 : #f9e0e0,
+  100 : #f0b3b3,
+  200 : #e68080,
+  300 : #db4d4d,
+  400 : #d42626,
+  500 : #cc0000,
+  600 : #c70000,
+  700 : #c00000,
+  800 : #b90000,
+  900 : #ad0000,
+  A100 : #ffd7d7,
+  A200 : #ffa4a4,
+  A400 : #ff7171,
+  A700 : #ff5858,
+  contrast: (
+    50 : $black,
+    100 : $black,
+    200 : $black,
+    300 : $white,
+    400 : $white,
+    500 : $white,
+    600 : $white,
+    700 : $white,
+    800 : $white,
+    900 : $white,
+    A100 : $black,
+    A200 : $black,
+    A400 : $black,
+    A700 : $black,
+  ),
+);
+
+$primary: map-get($map: $primary-palette, $key: 800);
+$primary-green: #047e85;
+$secondary: $gray-600;
+$accent: map-get($map: $accent-palette, $key: 200);
+$success: #abc111;
+$confirm-success: #63ba68;
+$danger: map-get($map: $danger-palette, $key: 500);
+$info: #257fa4;
+$success-dark: #137e84;
+$black-dark: #000000;
+$black-gray: #444444;
+$red-icon: #dd5858;
+$medium-gray: #767676;
+$primary-icon: #137E84;
+$card-color: #444444;
+
+
+$link: $success-dark;
+
+$theme-colors: (
+  primary: $primary,
+  // secondary: $secondary,
+  accent: $accent,
+  // success: $success,
+  // danger: $danger,
+  // info: $info,
+  success-dark: $success-dark,
+  primary-icon: $primary-icon,
+);
+
+
+$primary-lighter: map-get($map: $primary-palette, $key: 50);
+$primary-light: map-get($map: $primary-palette, $key: 100);
+$primary-darker: map-get($map: $primary-palette, $key: 900);
+
+$accent-light: map-get($map: $accent-palette, $key: 50);
+$accent-bright: map-get($map: $accent-palette, $key: 500);
+$accent-dark: map-get($map: $accent-palette, $key: 800);
+
+$info-light: lighten($color: $info, $amount: 40);
+$info-darker: lighten($color: $gray-600, $amount: 55);

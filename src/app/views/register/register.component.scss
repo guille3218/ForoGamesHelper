@@ -1,0 +1,24 @@
+@import 'variables';
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.register-card {
+    width: 50%;
+    margin: $spacer-y auto;
+    display: flex;
+    justify-content: center;
+}
+
+.register-button {
+    display: flex;
+    justify-content: center;
+}
