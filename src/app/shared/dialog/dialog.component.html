@@ -1,0 +1,15 @@
+<div class="dialog-container" *transloco="let t;">
+  <div class="title">
+    <fa-icon *ngIf="data.success" [icon]="['fas','check-circle']" class="success-icon"></fa-icon>
+    <fa-icon *ngIf="!data.success" [icon]="['fas','exclamation-triangle']" class="warning-icon"></fa-icon>
+    <h3>{{ t(data.title) }}</h3>
+  </div>
+
+  <div class="message">
+    <p>{{ t(data.message) }}</p>
+  </div>
+
+  <div class="button">
+    <button mat-raised-button color="primary" (click)="dialogRef.close()">{{ t('BUTTON.ACCEPT')}}</button>
+  </div>
+</div>

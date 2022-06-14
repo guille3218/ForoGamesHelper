@@ -30,8 +30,7 @@ $primary-palette: (
   A200 : #e9ffc7,
   A400 : #ddf6b8,
   A700 : #d0eda9,
-  contrast: (
-    50 : $black,
+  contrast: (50 : $black,
     100 : $black,
     200 : $black,
     300 : $white,
@@ -60,8 +59,7 @@ $accent-palette: (
   700 : #2a5f71,
   800 : #1d6989,
   900 : #093644,
-  contrast: (
-    50 : $black,
+  contrast: (50 : $black,
     100 : $black,
     200 : $white,
     300 : $black,
@@ -89,8 +87,7 @@ $danger-palette: (
   A200 : #ffa4a4,
   A400 : #ff7171,
   A700 : #ff5858,
-  contrast: (
-    50 : $black,
+  contrast: (50 : $black,
     100 : $black,
     200 : $black,
     300 : $white,
@@ -111,7 +108,8 @@ $primary: map-get($map: $primary-palette, $key: 800);
 $primary-green: #047e85;
 $secondary: $gray-600;
 $accent: map-get($map: $accent-palette, $key: 200);
-$success: #abc111;
+$success: #63ba68;
+$warmomg: #e6d11c;
 $confirm-success: #63ba68;
 $danger: map-get($map: $danger-palette, $key: 500);
 $info: #257fa4;

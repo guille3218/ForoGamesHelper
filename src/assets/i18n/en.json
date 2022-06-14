@@ -2,5 +2,26 @@
     "MENU_NAV": {
         "LOGIN": "Login",
         "REGISTER": "Register"
+    },
+    "BUTTON": {
+        "ACCEPT": "Accept"
+    },
+    "DIALOG": {
+        "TITLE_SUCCESS": "Successful",
+        "TITLE_WARNING": "Warning",
+        "TITLE_ERROR": "Error"
+    },
+    "USER": {
+        "REGISTER_USER_SUCCESS": "You have registered successfully",
+        "REGISTER_USER_ERROR": "Failed to register",
+        "REGISTER_USER_VALIDATION": "Please, fill the form correctly"
+    },
+    "REGISTER_PAGE": {
+        "USERNAME": "User",
+        "PASSWORD": "Password",
+        "EMAIL": "Email",
+        "NAME": "Name",
+        "SURNAME": "Surname",
+        "REGISTER": "Register"
     }
 }

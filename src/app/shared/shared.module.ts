@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FaIconLibrary,FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { icons } from './icons/icons';
+import { DialogComponent } from './dialog/dialog.component';
+import { TranslocoModule } from '@ngneat/transloco';
+import { DemoMaterialModule } from '../material-module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [DialogComponent],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    TranslocoModule,
+    DemoMaterialModule
   ],
-  exports:[
+  exports: [
     FontAwesomeModule
   ]
 })
@@ -21,4 +26,4 @@ export class SharedModule {
     this.library.addIcons(...icons);
 
   }
- }
+}

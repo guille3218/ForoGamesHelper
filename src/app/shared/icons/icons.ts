@@ -2,7 +2,10 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import {
     faAddressCard,
     faBook,
+    faCheckCircle,
     faEdit,
+    faExclamationCircle,
+    faExclamationTriangle,
     faEye,
     faEyeSlash,
     faInfoCircle,
@@ -17,5 +20,8 @@ export const icons: IconDefinition[] = [
     faTrashAlt,
     faInfoCircle,
     faEye,
-    faEyeSlash
+    faEyeSlash,
+    faCheckCircle,
+    faExclamationCircle,
+    faExclamationTriangle
 ];

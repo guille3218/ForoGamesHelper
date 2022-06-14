@@ -1,0 +1,25 @@
+@import 'variables';
+
+.message {
+  text-align: center;
+}
+
+.title {
+  display: flex;
+}
+
+.success-icon {
+  color: $success;
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+.warning-icon {
+  color: $warning;
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+.button {
+  text-align: right;
+}

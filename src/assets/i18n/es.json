@@ -3,5 +3,26 @@
         "NAME": "ForoGamesHelper",
         "LOGIN": "Iniciar Sesión",
         "REGISTER": "Registrarse"
+    },
+    "BUTTON": {
+        "ACCEPT": "Aceptar"
+    },
+    "DIALOG": {
+        "TITLE_SUCCESS": "Completado",
+        "TITLE_WARNING": "Aviso",
+        "TITLE_ERROR": "Error"
+    },
+    "USER": {
+        "REGISTER_USER_SUCCESS": "Se ha registrado correctamente",
+        "REGISTER_USER_ERROR": "No se ha podido registrar correctamente",
+        "REGISTER_USER_VALIDATION": "Rellena el formulario correctamente"
+    },
+    "REGISTER_PAGE": {
+        "USERNAME": "Usuario",
+        "PASSWORD": "Contraseña",
+        "EMAIL": "Correo Electrónico",
+        "NAME": "Nombre",
+        "SURNAME": "Apellidos",
+        "REGISTER": "Registrarse"
     }
 }
