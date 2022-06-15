@@ -15,13 +15,20 @@ import { TranslocoRootModule } from './transloco-root.module';
 import { HomeComponent } from './views/home/home.component';
 import { MenuNavComponent } from './views/menu-nav/menu-nav.component';
 import { RegisterComponent } from './views/register/register.component';
+import { LoginComponent } from './views/login/login.component';
+import { AuthService } from './core/auth/auth.service';
+import { AuthGuard } from './core/auth/auth.guard';
+import { AdminComponent } from './views/admin/admin.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RegisterComponent,
-    MenuNavComponent
+    MenuNavComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +45,7 @@ import { RegisterComponent } from './views/register/register.component';
     BrowserAnimationsModule,
     DemoMaterialModule
   ],
-  providers: [],
+  providers: [CookieService, AuthService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

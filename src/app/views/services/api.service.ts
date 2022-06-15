@@ -27,7 +27,20 @@ export class ApiService {
    * obtenerUsuarios$
    */
 
-  ovtenerUsuarios$(): Observable<UserResponse[]> {
+  obtenerUsuarios$(): Observable<UserResponse[]> {
     return this.http.get<UserResponse[]>(`${this.endpoint}/usuarios`);
+  }
+
+  /**
+   * obtenerUsuarioLogin
+   */
+
+  obtenerUsuarioLogin(username: string, password: string): Observable<UserResponse> {
+    const params = {
+      username,
+      password
+    }
+
+    return this.http.get<UserResponse>(`${this.endpoint}/login`, { params });
   }
 }

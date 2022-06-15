@@ -2,7 +2,9 @@
     "MENU_NAV": {
         "NAME": "ForoGamesHelper",
         "LOGIN": "Iniciar Sesión",
-        "REGISTER": "Registrarse"
+        "REGISTER": "Registrarse",
+        "USER": "Usuario: ",
+        "LEAVE": "Salir"
     },
     "BUTTON": {
         "ACCEPT": "Aceptar"
@@ -24,5 +26,10 @@
         "NAME": "Nombre",
         "SURNAME": "Apellidos",
         "REGISTER": "Registrarse"
+    },
+    "LOGIN_PAGE": {
+        "USERNAME": "Usuario",
+        "PASSWORD": "Contraseña",
+        "LOGIN": "Iniciar Sesión"
     }
 }

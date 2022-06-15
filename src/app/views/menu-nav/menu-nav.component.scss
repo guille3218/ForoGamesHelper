@@ -1,9 +1,40 @@
 @import 'variables';
 
-.navbar{
-    background-color: $primary-light;
+.navbar {
+  padding: 0 $spacer-x;
+  background-color: $primary-light;
+  border-bottom: 1px solid $white;
+  height: $navbar-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  color: black;
 }
 
-.client-icon{
-  padding-right: 5px;
+.menu .not-logged {
+  font-size: $font-size-base * 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: black;
+  font-size: $font-size-base * 2;
+  text-decoration: none;
+}
+
+.not-logged a {
+  margin: 10px;
+  color: black;
+}
+
+.menu-item {
+  margin: $spacer-y $spacer-x;
+}
+
+.user-icon {
+  font-size: $font-size-base * 2;
+  margin-right: $spacer-x * 2;
+  cursor: pointer;
 }

@@ -9,7 +9,9 @@ import {
     faEye,
     faEyeSlash,
     faInfoCircle,
+    faSignOutAlt,
     faTrashAlt,
+    faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -23,5 +25,7 @@ export const icons: IconDefinition[] = [
     faEyeSlash,
     faCheckCircle,
     faExclamationCircle,
-    faExclamationTriangle
+    faExclamationTriangle,
+    faSignOutAlt,
+    faUser
 ];

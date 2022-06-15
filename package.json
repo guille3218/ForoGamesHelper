@@ -27,6 +27,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@ngneat/transloco": "^2.23.5",
     "bootstrap": "^4.6.1",
+    "ngx-cookie-service": "^12.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

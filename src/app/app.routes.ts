@@ -3,4 +3,5 @@ export enum ROUTES {
   LOGIN = 'login',
   POST = 'post',
   USER = 'user',
+  ADMIN = 'admin'
 }
