@@ -1,7 +1,10 @@
 {
     "MENU_NAV": {
+        "NAME": "ForoGamesHelper",
         "LOGIN": "Login",
-        "REGISTER": "Register"
+        "REGISTER": "Register",
+        "USER": "User: ",
+        "LEAVE": "Log Out"
     },
     "BUTTON": {
         "ACCEPT": "Accept"
@@ -23,5 +26,10 @@
         "NAME": "Name",
         "SURNAME": "Surname",
         "REGISTER": "Register"
+    },
+    "LOGIN_PAGE": {
+        "USERNAME": "user",
+        "PASSWORD": "Password",
+        "LOGIN": "Log in"
     }
 }
